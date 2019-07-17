@@ -3,7 +3,11 @@
    isELIgnored="false"
  %>
 <html>
-<body>
-<h2>${message}</h2>
-</body>
+<form action="login">
+  Username:<br>
+  <input type="text" name="Name"><br>
+  Password:<br>
+  <input type="password" name="Password">
+  <input type="submit"></input>
+</form>
 </html>

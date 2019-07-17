@@ -11,19 +11,10 @@ public class UserController {
 
 
     @RequestMapping("/")
-    public ModelAndView welcome()
+    public String welcome()
     {
-        ModelAndView mv=new ModelAndView("index");
-
-        User user=new User("Welcome to Stackroute");
-        mv.addObject("message",user.getMessage());
-        return mv;
+        return "index";
     }
-    @RequestMapping("print")
-    public void print(Model model)
-    {
 
-        System.out.println("Hello");
-    }
 
 }
